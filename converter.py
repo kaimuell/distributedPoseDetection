@@ -37,6 +37,5 @@ class Converter:
         return df
 
     def dataframe_from_json(self, json_data):
-
         return pd.DataFrame.from_dict(json.loads(json_data), orient="index")
 

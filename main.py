@@ -3,7 +3,7 @@ import argparse
 import cv2
 import numpy as np
 
-from displaySubscriber.converter import Converter
+from converter import Converter
 from pose_detector import PoseDetector
 from publisher import Publisher
 

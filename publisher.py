@@ -25,7 +25,9 @@ class Publisher:
         while True:
             time.sleep(0.1) # wait for 0.1 seconds
             while not self.queue.empty():
-                socket.send_string("POSE " + self.queue.get())  # publish pose als theme POSE
+                data = self.queue.get()
+                print(data)
+                socket.send_string("POSE " + data)  # publish pose als theme POSE
 
         pass
 
